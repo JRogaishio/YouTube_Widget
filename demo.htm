@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo</title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+
+<script type="text/javascript" src="js/jPlugs/jquery-YouTube.js"></script>
+
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+<script type="text/javascript">
+	$(document).ready(function() {
+        $('#YouTubeFeed').youTubeChannel({ 
+            containerElement: "#YouTubeFeed",
+			userName: 'twitch2641', 
+            channel: "uploads", 
+			imageSize:0,
+			titleAboveImage: true,
+            showAuthor: true,
+			publishDate: true,
+			dateFormat: 'mm/dd/yyyy',
+            numberToDisplay: 6,
+            linksInNewWindow: true,
+			description: true,
+			viewCount: false,
+			stars: false,
+			time: false
+            //Channel can be either favorites or uploads
+            //loadingText: "Loading...",      
+			//ImageSize ranges from 0(largest) to 2(smallest)
+			//Dateformat is used for the publish date. Below are accepted formats:
+			//mm/dd/yyyy, mm/dd/yy, dd/mm/yyyy, dd/mm/yy, yyyy-mm-dd
+        });
+    });
+</script>
+
+</head>
+<body>
+	<div id="YouTubeFeed"></div>
+</body>
+</html>
